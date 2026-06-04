@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Fhiroz Khan | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/18a5302a5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Fhiroz<span>.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p class="anim-fade-up">Welcome to my space</p>
+                <h1 class="anim-fade-up">Hi, I'm <span>Shaik Fhiroz Khan</span></h1>
+                <h2 class="typewriter-container anim-fade-up">
+                    <span class="txt-type" data-wait="2000" data-words='["Software Developer", "AI & ML Enthusiast", "Full Stack Developer"]'></span>
+                </h2>
+                <p class="tagline anim-fade-up">Building intelligent software solutions using AI, Full Stack Development, and Data-Driven Technologies.</p>
+                <div class="cta-buttons anim-fade-up">
+                    <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">   
+                <div class="about-col-1">
+                    <div class="img-wrapper">
+                        <img src="Images/myimg2.jpg" alt="Shaik Fhiroz Khan">
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="description">
+                        I am a forward-thinking 4th-year Computer Science & Engineering student driven by building highly scalable, intelligent software architectures. Bridging the gap between robust Full-Stack applications and advanced Machine Learning models, I love converting abstract analytical challenges into high-impact user experiences.
+                    </p>
+
+                    <div class="tab-titles">
+                        <button class="tab-links active-link" onclick="opentab(event, 'education')">Education</button>
+                        <button class="tab-links" onclick="opentab(event, 'certifications')">Certifications</button>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h3>B.Tech in Computer Science & Engineering</h3>
+                            <p class="institute">Seshadri Rao Gudlavalleru Engineering College</p>
+                            <p class="timeline-meta"><i class="fa-solid fa-calendar-days"></i> 2023 – 2027 | <i class="fa-solid fa-graduation-cap"></i> CGPA: 8.7 / 10</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h3>Intermediate (MPC)</h3>
+                            <p class="institute">A.P. Model School & Junior College</p>
+                            <p class="timeline-meta"><i class="fa-solid fa-calendar-days"></i> Score: 93%</p>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Tab Content -->
+                    <div class="tab-contents" id="certifications">
+                        <ul class="cert-list">
+                            <li>
+                                <i class="fa-brands fa-java" style="color: var(--accent-color);"></i>
+                                <div>
+                                    <strong>Programming in Java</strong>
+                                    <p class="institute" style="margin: 0; font-size: 14px;">Issuer: NPTEL | <span style="color: var(--accent-color);">Java Programming</span></p>
+                                </div>
+                            </li>
+                            <li style="margin-top: 15px;">
+                                <i class="fa-brands fa-react" style="color: var(--accent-color);"></i>
+                                <div>
+                                    <strong>React Development</strong>
+                                    <p class="institute" style="margin: 0; font-size: 14px;">Issuer: NamasteDev | <span style="color: var(--accent-color);">Frontend Development</span></p>
+                                </div>
+                            </li>
+                            <li style="margin-top: 15px;">
+                                <i class="fa-brands fa-python" style="color: var(--accent-color);"></i>
+                                <div>
+                                    <strong>Python Programming</strong>
+                                    <p class="institute" style="margin: 0; font-size: 14px;">Issuer: AajHub | <span style="color: var(--accent-color);">Python Development</span></p>
+                                </div>
+                            </li>
+                            <li style="margin-top: 15px;">
+                                <i class="fa-solid fa-microchip" style="color: var(--accent-color);"></i>
+                                <div>
+                                    <strong>IBM Generative AI Fundamentals</strong>
+                                    <p class="institute" style="margin: 0; font-size: 14px;">Issuer: IBM | <span style="color: var(--accent-color);">Artificial Intelligence / Generative AI</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h1 class="sub-title">Professional Experience</h1>
+            <div class="experience-timeline">
+                
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-icon"><i class="fa-solid fa-laptop-code"></i></span>
+                        <div>
+                            <h3>Python Full Stack Developer Intern</h3>
+                            <h4>EduSkills</h4>
+                        </div>
+                    </div>
+                    <p class="exp-meta"><i class="fa-solid fa-calendar-days"></i> Recent</p>
+                    <p class="exp-body">Architected end-to-end web environments using Python platforms. Connected responsive UI layers with relational databases via structural REST APIs.</p>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-icon"><i class="fa-solid fa-brain"></i></span>
+                        <div>
+                            <h3>AI & Machine Learning Intern</h3>
+                            <h4>SmartBridge</h4>
+                        </div>
+                    </div>
+                    <p class="exp-meta"><i class="fa-solid fa-calendar-days"></i> 2024</p>
+                    <p class="exp-body">Built, trained, and structurally verified machine learning classifiers using complex datasets. Handled predictive pipelines and normalized large target sets.</p>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-icon"><i class="fa-solid fa-network-wired"></i></span>
+                        <div>
+                            <h3>Artificial Intelligence & Deep Learning Intern</h3>
+                            <h4>AIMER Society</h4>
+                        </div>
+                    </div>
+                    <p class="exp-meta"><i class="fa-solid fa-calendar-days"></i> Apr 2025 – May 2025</p>
+                    <p class="exp-body">Engineered production-level deep learning configurations. Executed robust feature extraction, automated image preprocessing pipelines, and verified accuracy metrics.</p>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-icon"><i class="fa-brands fa-python"></i></span>
+                        <div>
+                            <h3>Python Programming Intern</h3>
+                            <h4>APSSDC</h4>
+                        </div>
+                    </div>
+                    <p class="exp-meta"><i class="fa-solid fa-calendar-days"></i> Core Development</p>
+                    <p class="exp-body">Constructed core functional scripting tools, optimized data collection structures, and deployed reusable modular logic to enforce stable runtime processing.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h1 class="sub-title">Technical Expertise</h1>
+            <div class="skills-grid">
+                
+                <div class="skills-category">
+                    <h3><i class="fa-solid fa-terminal"></i> Core Languages</h3>
+                    <div class="tags">
+                        <span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span><span>C</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fa-solid fa-globe"></i> Web & Full Stack</h3>
+                    <div class="tags">
+                        <span>HTML5 & CSS3</span><span>React</span><span>PHP</span><span>Flask</span><span>Django</span><span>REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fa-solid fa-gears"></i> Intelligent Systems</h3>
+                    <div class="tags">
+                        <span>Machine Learning</span><span>Computer Vision</span><span>OpenCV</span><span>YOLO</span><span>Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fa-solid fa-database"></i> Architecture & Infra</h3>
+                    <div class="tags">
+                        <span>Data Structures</span><span>Algorithms (DSA)</span><span>MySQL</span><span>DBMS</span><span>Git & GitHub</span><span>Docker</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Featured Engineering Projects</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <div class="work-icon-top"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="layer">
+                        <h3>Digital Land Registry System</h3>
+                        <p>Secure database framework developed to eliminate document tampering risks and ensure immutable cryptographic audit trails.</p>
+                        <div class="proj-tags"><span>DBMS</span><span>Security</span><span>Web Dev</span></div>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                
+
+                <div class="work">
+                    <div class="work-icon-top"><i class="fa-solid fa-user-doctor"></i></div>
+                    <div class="layer">
+                        <h3>Doctor Appointment Booking System</h3>
+                        <p>Full-stack patient system facilitating medical booking pipelines, scheduling optimizations, and immediate administrative oversight.</p>
+                        <div class="proj-tags"><span>Full Stack</span><span>MySQL</span><span>Web APIs</span></div>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="work-icon-top"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="layer">
+                        <h3>AI Career Guidance Platform</h3>
+                        <p>Intelligent recommendation framework analyzing candidate inputs against industrial vectors to map clear educational routes.</p>
+                        <div class="proj-tags"><span>Machine Learning</span><span>Flask</span><span>NLP</span></div>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="work-icon-top"><i class="fa-solid fa-traffic-light"></i></div>
+                    <div class="layer">
+                        <h3>Traffic Analytics & Smart Signal Optimization</h3>
+                        <p>Utilizes computer vision models (YOLO & OpenCV) to process regional transit streams in real-time and balance timing intervals automatically.</p>
+                        <div class="proj-tags"><span>YOLO</span><span>OpenCV</span><span>Python</span></div>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="work-icon-top"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="layer">
+                        <h3>Data Structures Visualization Platform</h3>
+                        <p>Interactive educational application engineered to illustrate node distributions, tree balances, and sorting tracks sequentially.</p>
+                        <div class="proj-tags"><span>Algorithms</span><span>JavaScript</span><span>UI/UX</span></div>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="work-icon-top"><i class="fa-solid fa-hand"></i></div>
+                    <div class="layer">
+                        <h3>Hand Gesture Navigation System</h3>
+                        <p>Developed a real-time gesture recognition engine that enables touchless interface control using advanced computer vision techniques to deliver seamless human-computer interaction.</p>
+                        <div class="proj-tags">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>MediaPipe</span>
+                        </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="container">
+            <h1 class="sub-title">Major Achievements</h1>
+            <div class="achievements-grid">
+
+                <div class="achieve-card gold">
+                    <div class="achieve-badge"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>1st Prize Winner</h3>
+                    <p class="event">Technical Paper Presentation, Bectagon 2K25</p>
+                    <p class="desc">Awarded top honors for showcasing next-generation computing frameworks before a panel of industrial researchers.</p>
+                </div>
+
+                <div class="achieve-card gold">
+                    <div class="achieve-badge"><i class="fa-solid fa-crown"></i></div>
+                    <h3>1st Prize Winner</h3>
+                    <p class="event">Emperor Strikedown Event, Bectagon 2K25</p>
+                    <p class="desc">Conquered live architectural debugging rounds and computational problems in a fast-paced environment.</p>
+                </div>
+
+                <div class="achieve-card silver">
+                    <div class="achieve-badge"><i class="fa-solid fa-medal"></i></div>
+                    <h3>Runner-Up</h3>
+                    <p class="event">Nirulotsav National Hackathon</p>
+                    <p class="desc">Prototyped and built a technical solution within a strict 36-hour limit to solve a real-world problem statement.</p>
+                </div>
+
+                <div class="achieve-card silver">
+                    <div class="achieve-badge"><i class="fa-solid fa-award"></i></div>
+                    <h3>Runner-Up Honors</h3>
+                    <p class="event">Project Expo | C.R. Reddy & Dhanekula Institute</p>
+                    <p class="desc">Earned double placement acknowledgments across regional expos for presenting custom AI edge products.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Let's Build Something Great</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> shaikfhirozkhan@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9347382647</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/fhiroz-khan-shaik-b94319284" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/FHIROZ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/Fhiroz_Khan_19/home" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/fhiroz_khan_shaik__19/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="My Resume.pdf" download class="btn btn-primary" style="margin-top: 30px;">Download Official CV</a>
+                </div>
+                <form action="https://formspree.io/f/xzdqbkej" method="POST">
+                    <!-- Full Name Input Field -->
+                    <input type="text" name="Name" placeholder="Your Full Name" required>
+                    
+                    <!-- Professional Email Input Field -->
+                    <input type="email" name="Email" placeholder="Your Professional Email" required>
+                    
+                    <!-- Inquiry Message Textarea Field -->
+                    <textarea name="Message" rows="6" placeholder="Project Description / Inquiry Details" required></textarea>
+                    
+                    <!-- Form Submission Trigger Button -->
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Shaik Fhiroz Khan. Engineered to build smart data tech solutions. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
