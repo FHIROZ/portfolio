@@ -40,77 +40,79 @@
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <div class="row">   
-                <div class="about-col-1">
-                    <div class="img-wrapper">
-                        <img src="./Images/myimg2.JPG" alt="Shaik Fhiroz Khan">
+   <!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row" style="display: block;"> <!-- Forces full-width layout instead of two columns -->
+            <div class="about-col-2" style="flex-basis: 100%;">
+                <h1 class="sub-title">About Me</h1>
+                
+                <p class="description" style="font-size: 18px; line-height: 1.8; margin-bottom: 25px;">
+                    I am a forward-thinking 4th-year Computer Science & Engineering student driven by building highly scalable, intelligent software architectures. Bridging the gap between robust Full-Stack applications and advanced Machine Learning models, I love converting abstract analytical challenges into high-impact user experiences.
+                </p>
+                
+                <p class="description" style="font-size: 18px; line-height: 1.8; margin-bottom: 35px;">
+                    With a strong foundation in design patterns and data-driven systems, my expertise spans constructing resilient backends, managing relational datasets, and deploying embedded computer vision networks. I continuously seek to optimize system performance, refine code quality, and engineer smart software infrastructures that solve real-world industrial complexities.
+                </p>
+
+                <div class="tab-titles" style="margin-top: 40px;">
+                    <button class="tab-links active-link" onclick="opentab(event, 'education')">Education</button>
+                    <button class="tab-links" onclick="opentab(event, 'certifications')">Certifications</button>
+                </div>
+
+                <!-- Education Tab -->
+                <div class="tab-contents active-tab" id="education">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h3>B.Tech in Computer Science & Engineering</h3>
+                        <p class="institute">Seshadri Rao Gudlavalleru Engineering College</p>
+                        <p class="timeline-meta"><i class="fa-solid fa-calendar-days"></i> 2023 – 2027 | <i class="fa-solid fa-graduation-cap"></i> CGPA: 8.7 / 10</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h3>Intermediate (MPC)</h3>
+                        <p class="institute">A.P. Model School & Junior College</p>
+                        <p class="timeline-meta"><i class="fa-solid fa-calendar-days"></i> Score: 93%</p>
                     </div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="description">
-                        I am a forward-thinking 4th-year Computer Science & Engineering student driven by building highly scalable, intelligent software architectures. Bridging the gap between robust Full-Stack applications and advanced Machine Learning models, I love converting abstract analytical challenges into high-impact user experiences.
-                    </p>
 
-                    <div class="tab-titles">
-                        <button class="tab-links active-link" onclick="opentab(event, 'education')">Education</button>
-                        <button class="tab-links" onclick="opentab(event, 'certifications')">Certifications</button>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="education">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h3>B.Tech in Computer Science & Engineering</h3>
-                            <p class="institute">Seshadri Rao Gudlavalleru Engineering College</p>
-                            <p class="timeline-meta"><i class="fa-solid fa-calendar-days"></i> 2023 – 2027 | <i class="fa-solid fa-graduation-cap"></i> CGPA: 8.7 / 10</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <h3>Intermediate (MPC)</h3>
-                            <p class="institute">A.P. Model School & Junior College</p>
-                            <p class="timeline-meta"><i class="fa-solid fa-calendar-days"></i> Score: 93%</p>
-                        </div>
-                    </div>
-
-                    <!-- Certifications Tab Content -->
-                    <div class="tab-contents" id="certifications">
-                        <ul class="cert-list">
-                            <li>
-                                <i class="fa-brands fa-java" style="color: var(--accent-color);"></i>
-                                <div>
-                                    <strong>Programming in Java</strong>
-                                    <p class="institute" style="margin: 0; font-size: 14px;">Issuer: NPTEL | <span style="color: var(--accent-color);">Java Programming</span></p>
-                                </div>
-                            </li>
-                            <li style="margin-top: 15px;">
-                                <i class="fa-brands fa-react" style="color: var(--accent-color);"></i>
-                                <div>
-                                    <strong>React Development</strong>
-                                    <p class="institute" style="margin: 0; font-size: 14px;">Issuer: NamasteDev | <span style="color: var(--accent-color);">Frontend Development</span></p>
-                                </div>
-                            </li>
-                            <li style="margin-top: 15px;">
-                                <i class="fa-brands fa-python" style="color: var(--accent-color);"></i>
-                                <div>
-                                    <strong>Python Programming</strong>
-                                    <p class="institute" style="margin: 0; font-size: 14px;">Issuer: AajHub | <span style="color: var(--accent-color);">Python Development</span></p>
-                                </div>
-                            </li>
-                            <li style="margin-top: 15px;">
-                                <i class="fa-solid fa-microchip" style="color: var(--accent-color);"></i>
-                                <div>
-                                    <strong>IBM Generative AI Fundamentals</strong>
-                                    <p class="institute" style="margin: 0; font-size: 14px;">Issuer: IBM | <span style="color: var(--accent-color);">Artificial Intelligence / Generative AI</span></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Certifications Tab -->
+                <div class="tab-contents" id="certifications">
+                    <ul class="cert-list">
+                        <li>
+                            <i class="fa-brands fa-java" style="color: var(--accent-color);"></i>
+                            <div>
+                                <strong>Programming in Java</strong>
+                                <p class="institute" style="margin: 0; font-size: 14px;">Issuer: NPTEL | <span style="color: var(--accent-color);">Java Programming</span></p>
+                            </div>
+                        </li>
+                        <li style="margin-top: 15px;">
+                            <i class="fa-brands fa-react" style="color: var(--accent-color);"></i>
+                            <div>
+                                <strong>React Development</strong>
+                                <p class="institute" style="margin: 0; font-size: 14px;">Issuer: NamasteDev | <span style="color: var(--accent-color);">Frontend Development</span></p>
+                            </div>
+                        </li>
+                        <li style="margin-top: 15px;">
+                            <i class="fa-brands fa-python" style="color: var(--accent-color);"></i>
+                            <div>
+                                <strong>Python Programming</strong>
+                                <p class="institute" style="margin: 0; font-size: 14px;">Issuer: AajHub | <span style="color: var(--accent-color);">Python Development</span></p>
+                            </div>
+                        </li>
+                        <li style="margin-top: 15px;">
+                            <i class="fa-solid fa-microchip" style="color: var(--accent-color);"></i>
+                            <div>
+                                <strong>IBM Generative AI Fundamentals</strong>
+                                <p class="institute" style="margin: 0; font-size: 14px;">Issuer: IBM | <span style="color: var(--accent-color);">Artificial Intelligence / Generative AI</span></p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="experience">
         <div class="container">
